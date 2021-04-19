@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body id="popup">
+  <h4>修改结束后请刷新直播间</h4>
+  <form id="add">
+    <div class="form-item">模式：
+      <select name="mode" style="width: 100%;" id="add-mode">
+        <option value="word" selected label="词"></option>
+        <option value="reg" label="正则表达式"></option>
+      </select>
+    </div>
+    <div class="form-item">精确匹配：
+      <select name="exact" style="width: 100%;" id="add-exact">
+        <option value="true" selected label="是"></option>
+        <option value="false" label="否"></option>
+      </select>
+    </div>
+    <div class="form-item">词：<input type="text" name="word" required></div>
+    <div class="form-item">替换词：<input type="text" name="replace" required /></div>
+    <div class="form-item">前缀：<input type="text" name="prefix" id="add-prefix"></div>
+    <div class="form-item">后缀：<input type="text" name="suffix" id="add-suffix"></div>
+    <div class="form-item">直播间：<input type="number" name="room"></div>
+    <button type="submit">添加</button>
+  </form>
+  <hr />
+  <form id="default">
+    <div class="form-item">
+      默认前缀：<input type="text" name="prefix" />
+    </div>
+    <div class="form-item">
+      默认后缀：<input type="text" name="suffix" />
+    </div>
+    <button type="submit">修改</button>
+  </form>
+  <hr />
+  <form id="delete">
+    <div class="form-item">
+      所有已添加词：
+      <select id="own" style="width: 100%;">
+      </select>
+    </div>
+    <button type="submit">删除</button>
+    <div id='own-text'></div>
+  </form>
+  <script src="popup.js"></script>
+</body>
+
+</html>

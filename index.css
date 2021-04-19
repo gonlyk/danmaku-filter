@@ -1,0 +1,15 @@
+/* .chat-item.danmaku-item::after , .bilibili-danmaku::after {
+  content: '❤'
+} */
+
+.form-item {
+  margin-bottom: 10px;
+}
+
+.option-str {
+  line-height: 16px;
+}
+
+#popup {
+  overflow: scroll;
+}
